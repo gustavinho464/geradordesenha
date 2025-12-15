@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
+    <title>Gerador de senha do night</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <section class="conteudo">
         <div class="conteudo-titulo">
             <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h2 class="titulo-principal">Gerador de senhas do night</h2>
             <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
         </div>
         <div class="conteudo-senha">
@@ -65,4 +65,54 @@
     </section>
     <script src="main.js"></script>
 </body> 
+</html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   <title>Modo Claro e Escuro</title>
+
+   <style> 
+      /* Estilo padrão (modo claro) */
+    body {
+       background-color: #ffffff;
+       color: #000000;
+       font-family: Arial, Helvetica, sans-serif;
+       transition: background-color 0.3s, color 0.3s;
+       padding: 20px;
+
+    }
+
+    /* Modo escuro */
+     body.dark-mode {
+      background-color: #121212;   
+      color: #ffffff;
+   
+    }
+
+     button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+     
+    }   
+ </style>
+</head>
+<body>
+  
+    <h1> Modo claro e Escuro </h1>
+    <p>Clique no Botão para mudar o tema do seu site.</p>
+    
+   <button onclick="toggleMode()">🌙 Alterar Tema</button>
+
+   <script> 
+      function toggleMode() {
+          document.body.classList.toggle("dark-mode");
+
+    }
+    </script>
+
+</body>
 </html>
